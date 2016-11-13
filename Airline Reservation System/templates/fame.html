@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Ticket History | ReplicaDB</title>
+		<link href="{{url_for('static',filename='Content/bootstrap.min.css')}}" rel="stylesheet" />
+		<script src="{{url_for('static',filename='Scripts/jquery.min.js')}}"></script>
+    	<script src="{{url_for('static',filename='Scripts/bootstrap.min.js')}}"></script>
+    	<link rel="shortcut icon" href="{{url_for('static',filename='icon.png')}}" />
+	</head>
+	<style type="text/css">
+			
+			body{
+				overflow-x: hidden;
+				font-family: ubuntu;
+				background-image: url('{{url_for('static',filename='index/aeroplane.jpg')}}');
+				background-attachment:fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+
+			.container{
+				background-color: white;
+				opacity: 0.8;
+			}
+
+			.container .jumbotron{
+				background-color: transparent;
+				font-family: waree;
+			}
+			header{
+				padding: 1em 1em;
+				box-sizing: border-box;
+			}
+			footer{
+				bottom: 0;
+				position: absolute;
+				width:50vw;
+				left:25vw;
+				padding: 2em 2em;
+				box-sizing: border-box;
+			}
+
+	</style>
+	<body>
+	<div class="container">
+		<div class="jumbotron text-center">
+			<h1>{{var}}</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+			
+				<center><h2>{{var}} has been used by {{count}} happy users of replicaDB</h2></center>
+
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<center>The testimonials are coming soon</center>
+	</footer>
+
+	</body>
+</html>
